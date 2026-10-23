@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ExpenseTracker",
+    "name": "Expense Tracker",
     "slug": "ExpenseTracker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,16 +10,37 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.jaswanthsri9125.expensetracker",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#176B45",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
+    "androidStatusBar": {
+      "backgroundColor": "#176B45",
+      "barStyle": "light-content"
+    },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#176B45"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6d8e9afa-d238-485c-85bd-be4b6c1c6d01"
+      }
     }
   }
 }
